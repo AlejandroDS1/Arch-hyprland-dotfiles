@@ -1,0 +1,1 @@
+/home/bifuz/.config/nvim/init.lua
