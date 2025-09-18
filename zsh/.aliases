@@ -1,0 +1,13 @@
+# This is a custom aliases file to source into the shell config. By Bifuz
+
+alias vi='nvim'
+
+# ls aliases
+alias l='ls'
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+
+# cd aliases
+alias ..='cd ..'
+alias ...='cd ../..'
