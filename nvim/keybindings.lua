@@ -1,1 +1,0 @@
-/home/bifuz/.config/nvim/keybindings.lua
