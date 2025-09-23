@@ -1,12 +1,10 @@
 -- init.lua
--- HyprCraft 
--- repository: https://github.com/zephardev/hyprcraft
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 vim.opt.number = true
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
@@ -68,7 +66,6 @@ require("lazy").setup({
         flavour = "mocha",
         transparent_background = true,
         term_colors = true,
-        transparent_background = false,
         styles = {
           nvimtree = true, 
           treesitter = true,
@@ -108,7 +105,7 @@ require("lazy").setup({
             Normal = { bg = colors.base },
             CursorLine = { bg = colors.mantle },
             Visual = { bg = colors.overlay0 },
-            LineNr = { fg = colors.base },
+            LineNr = { fg = colors.lavender },
             CursorLineNr = { fg = colors.lavender, bold = true },
             StatusLine = { bg = colors.mantle },
             TabLine = { bg = colors.mantle, fg = colors.overlay1 },
@@ -457,5 +454,6 @@ vim.diagnostic.config({
 vim.api.nvim_create_autocmd("VimEnter", {
     callback = function()
         vim.wo.number = true
+        vim.wo.relativenumber = true
     end,
 })
